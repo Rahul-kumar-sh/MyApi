@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\asp\\MyApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\models\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\models\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\migrations\\20250206144114_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\migrations\\20250206144114_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|d:\\asp\\myapi\\myapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78F700F4-1E32-482F-A6B4-A157C4FCA033}|MyApi\\MyApi.csproj|solutionrelative:myapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3fd5e0cc-709a-4f8c-94c3-7f0f8dff5bb2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MyApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MyApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-07T05:12:37.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "MyApi\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "MyApi\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAmwGkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:47:29.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250206144114_initial.cs",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Migrations\\20250206144114_initial.cs",
+              "RelativeDocumentMoniker": "MyApi\\Migrations\\20250206144114_initial.cs",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Migrations\\20250206144114_initial.cs",
+              "RelativeToolTip": "MyApi\\Migrations\\20250206144114_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:41:14.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeDBContext.cs",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Models\\EmployeeDBContext.cs",
+              "RelativeDocumentMoniker": "MyApi\\Models\\EmployeeDBContext.cs",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Models\\EmployeeDBContext.cs",
+              "RelativeToolTip": "MyApi\\Models\\EmployeeDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:27:37.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "MyApi\\Models\\Employee.cs",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Models\\Employee.cs",
+              "RelativeToolTip": "MyApi\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:19:56.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\Program.cs",
+              "RelativeDocumentMoniker": "MyApi\\Program.cs",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\Program.cs",
+              "RelativeToolTip": "MyApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:16:54.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\asp\\MyApi\\MyApi\\appsettings.json",
+              "RelativeDocumentMoniker": "MyApi\\appsettings.json",
+              "ToolTip": "D:\\asp\\MyApi\\MyApi\\appsettings.json",
+              "RelativeToolTip": "MyApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-06T14:16:45.406Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
