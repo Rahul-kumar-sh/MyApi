@@ -18,7 +18,7 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore MyApi.sln --disable-parallel
+        run: dotnet restore MyApi.sln
 
       - name: Build solution
         run: dotnet build MyApi.sln -c Release --no-restore
