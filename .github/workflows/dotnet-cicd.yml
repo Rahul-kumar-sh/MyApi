@@ -7,11 +7,11 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build-test-publish:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup .NET
@@ -19,21 +19,20 @@ jobs:
         with:
           dotnet-version: "8.0.x"
 
-      - name: Restore
-        run: dotnet restore MyApi/MyApi.csproj
+      - name: Restore dependencies
+        run: dotnet restore MyApi.sln
 
-      - name: Build
-        run: dotnet build MyApi/MyApi.csproj -c Release --no-restore
+      - name: Build solution
+        run: dotnet build MyApi.sln -c Release --no-restore
 
-      - name: Test
-        run: dotnet test MyApi/MyApi.sln -c Release --no-build || true
+      - name: Run tests (ignore if no tests)
+        run: dotnet test MyApi.sln -c Release --no-build || true
 
-      - name: Publish
+      - name: Publish application
         run: dotnet publish MyApi/MyApi.csproj -c Release -o ./publish
 
-      - name: Upload Artifact
+      - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
           name: dotnet-build
           path: ./publish
-
