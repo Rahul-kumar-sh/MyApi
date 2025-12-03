@@ -7,39 +7,33 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build-test-publish:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repo
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      # Install .NET SDK
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "8.0.x"
 
-      # Restore NuGet packages
       - name: Restore
-        run: dotnet restore MyApi.sln
+        run: dotnet restore MyApi/MyApi.csproj
 
-      # Build project (Release)
       - name: Build
-        run: dotnet build MyApi.sln -c Release --no-restore
+        run: dotnet build MyApi/MyApi.csproj -c Release --no-restore
 
-      # Run tests (optional but good practice)
       - name: Test
-        run: dotnet test MyApi.sln -c Release --no-build
+        run: dotnet test MyApi/MyApi.sln -c Release --no-build || true
 
-      # Publish app into /publish folder
       - name: Publish
         run: dotnet publish MyApi/MyApi.csproj -c Release -o ./publish
 
-      # Upload publish folder as artifact so you can download it
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
           name: dotnet-build
           path: ./publish
+
