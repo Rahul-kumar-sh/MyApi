@@ -8,8 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      DOTNET_SKIP_WORKLOAD_UPDATE_NOTIFICATION: true
+      DOTNET_NOLOGO: true
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup .NET
@@ -18,7 +22,7 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore MyApi.sln
+        run: dotnet restore MyApi.sln --disable-parallel
 
       - name: Build solution
         run: dotnet build MyApi.sln -c Release --no-restore
