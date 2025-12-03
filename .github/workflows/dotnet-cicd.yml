@@ -13,29 +13,29 @@ jobs:
     steps:
       # Checkout repo
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Install .NET SDK
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
 
       # Restore NuGet packages
       - name: Restore
-        run: dotnet restore MyApi.sln -c Release --no-restore
+        run: dotnet restore MyApi.sln
 
       # Build project (Release)
       - name: Build
-        run: dotnet build MyApi.sln --configuration Release --no-restore
+        run: dotnet build MyApi.sln -c Release --no-restore
 
       # Run tests (optional but good practice)
       - name: Test
-        run: dotnet test MyApi.sln --configuration Release --no-build
+        run: dotnet test MyApi.sln -c Release --no-build
 
       # Publish app into /publish folder
       - name: Publish
-        run: dotnet publish MyApi.csproj -c Release -o ./publish
+        run: dotnet publish MyApi/MyApi.csproj -c Release -o ./publish
 
       # Upload publish folder as artifact so you can download it
       - name: Upload Artifact
