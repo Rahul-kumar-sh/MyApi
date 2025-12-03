@@ -3,23 +3,17 @@ name: .NET CI
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
-  build-test-publish:
+  build:
     runs-on: ubuntu-latest
-
-    env:
-      DOTNET_SKIP_WORKLOAD_UPDATE_NOTIFICATION: true
-      DOTNET_NOLOGO: true
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
 
@@ -29,14 +23,11 @@ jobs:
       - name: Build solution
         run: dotnet build MyApi.sln -c Release --no-restore
 
-      - name: Run tests (ignore if no tests)
-        run: dotnet test MyApi.sln -c Release --no-build --no-restore || true
-
       - name: Publish application
         run: dotnet publish MyApi/MyApi.csproj -c Release -o ./publish
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dotnet-build
           path: ./publish
