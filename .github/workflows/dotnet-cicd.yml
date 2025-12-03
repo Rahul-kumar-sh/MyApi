@@ -10,6 +10,10 @@ jobs:
   build-test-publish:
     runs-on: ubuntu-latest
 
+    env:
+      DOTNET_SKIP_WORKLOAD_UPDATE_NOTIFICATION: true
+      DOTNET_NOLOGO: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -20,13 +24,13 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore MyApi.sln
+        run: dotnet restore MyApi.sln --disable-parallel
 
       - name: Build solution
         run: dotnet build MyApi.sln -c Release --no-restore
 
       - name: Run tests (ignore if no tests)
-        run: dotnet test MyApi.sln -c Release --no-build || true
+        run: dotnet test MyApi.sln -c Release --no-build --no-restore || true
 
       - name: Publish application
         run: dotnet publish MyApi/MyApi.csproj -c Release -o ./publish
