@@ -25,7 +25,6 @@ namespace MyApi.Models
         [Required]
         public DateTime? HireDate { get; set; } = DateTime.UtcNow;
 
-        [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Salary { get; set; }
     }
